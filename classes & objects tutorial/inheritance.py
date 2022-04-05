@@ -1,5 +1,5 @@
 
-class Veichle:
+class Vehicle:
     def __init__(self, price, gas, color):
         self.price = price
         self.gas = gas
@@ -15,7 +15,7 @@ class Veichle:
         return self.gas
 
 
-class Car(Veichle):
+class Car(Vehicle):
     def __init__(self, price, gas, color, speed):
         super().__init__(price, gas, color)
         self.speed = speed
